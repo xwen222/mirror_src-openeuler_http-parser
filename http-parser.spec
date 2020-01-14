@@ -1,6 +1,6 @@
 Name:           http-parser
 Version:        2.9.2
-Release:        1
+Release:        2
 Summary:        HTTP request/response parser for C
 
 License:        MIT
@@ -27,6 +27,7 @@ Features:
 
 %package devel
 Summary: Development headers and static libraries
+Requires: %{name} = %{version}-%{release}
 
 %description devel
 Development headers and static libraries for http-parser.
@@ -81,5 +82,8 @@ EOF
 %doc AUTHORS README.md
 
 %changelog
+* Wed Jan 15 2020 openEuler Buildteam <buildteam@openeuler.org> - 2.9.2-2
+- optimization the patch
+
 * Sat Aug 31 2019 openEuler Buildteam <buildteam@openeuler.org> - 2.9.2-1
 - Package init
