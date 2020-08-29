@@ -1,5 +1,5 @@
 Name:           http-parser
-Version:        2.9.3
+Version:        2.9.4
 Release:        1
 Summary:        HTTP request/response parser for C
 
@@ -82,6 +82,9 @@ EOF
 %doc AUTHORS README.md
 
 %changelog
+* Sat Aug 29 2020 xiaqirong <xiaqirong1@huawei.com> - 2.9.4-1
+- update to 2.9.4
+
 * Mon May 11 2020 openEuler Buildteam <buildteam@openeuler.org> - 2.9.3-1
 - Type:requirement
 - ID:NA
