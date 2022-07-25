@@ -1,11 +1,13 @@
 Name:           http-parser
 Version:        2.9.4
-Release:        1
+Release:        2
 Summary:        HTTP request/response parser for C
 
 License:        MIT
 URL:            https://github.com/nodejs/%{name}
 Source0:        https://github.com/nodejs/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
+
+Patch6000:      backport-url-treat-empty-port-as-default.patch
 
 BuildRequires:  gcc meson
 
@@ -82,6 +84,9 @@ EOF
 %doc AUTHORS README.md
 
 %changelog
+* Mon Jul 25 2022 yanglu <yanglu72@h-partners.com> - 2.9.4-2
+- Include patch to work colon but no port
+
 * Tue Jun 23 2020 hanzhijun <hanzhijun1@huawei.com> - 2.9.4-1
 - update to 2.9.4
 
